@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class User(models.Model):
+class Subscriber(models.Model):
     first_name = models.CharField(max_length= 100)
     last_name = models.CharField(max_length=100)
     user_email = models.EmailField(max_length=70, unique=True)
